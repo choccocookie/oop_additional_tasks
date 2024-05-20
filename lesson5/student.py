@@ -10,7 +10,13 @@
 
 
 class Student:
-    pass
+    __slots__ = ('name', 'age', 'grades')
+
+    def __call__(self, *args, **kwargs):
+        return f"{self.name}, {self.age}, {self.grades}"
+
+class Course:
+    __slots__ = ('name', 'students')
 
 
 # код для проверки 
