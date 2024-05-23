@@ -10,7 +10,16 @@
 
 
 class Car:
-    pass
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+
+        #получение текущего года
+        curent_year = 2024
+        if year > curent_year:
+            raise ("Машина еще не выпущена")
+        else:
+            self.year = year
 
 
 # код для проверки
